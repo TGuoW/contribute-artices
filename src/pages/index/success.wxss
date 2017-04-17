@@ -1,9 +1,59 @@
 /* pages/index/success.wxss */
-.successBg{
+/*.successBg{
  background: url("/img/successBg.png") no-repeat center fixed;
   width:100%;  
   height:100%;  
   background-size:100% 100%;  
   position:absolute; 
-}
+}*/
 
+.box{
+  background: #111111 no-repeat;
+  width:100%;  
+  height:100%;  
+  background-size:100% 100%;  
+  position:absolute; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.row{
+  margin-top: 80rpx;
+  display:flex;
+}
+.row1{
+  margin-bottom: 20rpx;
+}
+.right{
+  width:120rpx;
+}
+.text-success{
+  width:360rpx;
+}
+.rumor{
+  margin-top: 40rpx;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  width: 180rpx;
+}
+.Horizontal-line{
+  height: 2rpx;
+  width: 420rpx;
+  border-top:2rpx solid #fff;
+}
+.text-read{
+  width:220rpx;
+}
+.hand{
+  width: 40rpx;
+}
+.QRCode{
+  width: 160rpx;
+}

@@ -24,7 +24,16 @@
   background-size:100% 100%;  
   position:absolute; 
 }
-
+.logo{
+  width: 480rpx;
+}
+.contribute{
+  width: 460rpx;
+}
+.radio{
+  font-size: 30rpx;
+  padding-top: 50rpx;
+}
 .input{
  padding-left: 10rpx;
  padding-top: 10rpx;
@@ -37,28 +46,19 @@
  width: 475rpx;
  height: 380rpx;
 }
-.submit{
-  background: url("/img/btn.png") no-repeat center;
-  width: 200rpx;
-  height: 74rpx;
-}
-.btn{
-  background: #fff no-repeat center;
-  /*border:5rpx solid #fff;*/
-  border-radius: 0;
-  margin-left: 31rpx;
-  margin-right: 31rpx;
-  height: 120rpx;
-  width: 120rpx;
-}
+
 .image{
   height: 120rpx;
   width: 120rpx;
-  margin-left: -24rpx;
+   margin-left: 32rpx;
+  margin-right: 32rpx;
+  background: #fff no-repeat center;
 }
-.radio{
-  font-size: 30rpx;
-  padding-top: 50rpx;
+.submit{
+  background: url("/img/btn.png") no-repeat center;
+  width: 186rpx;
+  height: 74rpx;
+  background-size:100% 100%; 
 }
 
 

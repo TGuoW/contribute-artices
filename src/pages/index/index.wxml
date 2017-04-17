@@ -2,8 +2,10 @@
 <view class="background">
   <form bindsubmit="formSubmit">
     <view class="box">
-      <image class="row" style="width:520rpx" src="/img/logo.png" mode="widthFix"></image>
-      <image class="row" style="width:460rpx" src="/img/contribute.png" mode="widthFix"></image>
+      <image class="row logo" src="/img/logo.png" mode="widthFix"></image>
+      <!--logo-->
+      <image class="row contribute" src="/img/contribute.png" mode="widthFix"></image>
+      <!--请你来投稿-->
       <view class="row">
         <radio-group name="radioGroup"> 
           <label class="radio" wx:for="{{items}}">
@@ -11,30 +13,22 @@
           </label>
         </radio-group>
       </view>
-
+      <!--单选框-->
       <view class="inputView row">
         <textarea class="input" name="input" placeholder="请输入投稿内容" auto-height="true"/>
       </view>
-
+      <!--文字输入框-->
       <view class="row" >
-        <button class="btn" bindtap="changeImage0" type="default" wx:if="{{sum>0}}">
-          <image src="{{source[0]}}" class="image"></image>
-        </button>
-        <button class="btn" bindtap="changeImage1" type="default" wx:if="{{sum>1}}">
-          <image src="{{source[1]}}" class="image"></image>
-        </button>
-        <button class="btn" bindtap="changeImage2" type="default" wx:if="{{sum>2}}">
-          <image src="{{source[2]}}" class="image"></image>
-        </button>
-        <button class="btn" bindtap="addImage" type="default" wx:if="{{sum<3}}">
-          <image src="/img/++.png" class="image"></image>
-        </button>
+          <image src="{{source[0]}}" class="image" bindtap="changeImage0"  wx:if="{{sum>0}}"></image>
+          <image src="{{source[1]}}" class="image" bindtap="changeImage1" wx:if="{{sum>1}}"></image>
+          <image src="{{source[2]}}" class="image" bindtap="changeImage2" wx:if="{{sum>2}}"></image>
+          <image src="/img/+.png" class="image" bindtap="addImage" wx:if="{{sum<3}}"></image>
       </view>
-
+      <!--图片-->
       <view class="row">
         <button class="submit" formType="submit"></button>
       </view>
-
+      <!--提交按钮-->
     </view>
   </form>
 </view>

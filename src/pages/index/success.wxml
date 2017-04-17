@@ -1,4 +1,17 @@
 <!--success.wxml-->
-<view class="successBg"></view>
+<view class="box">
+  <image src="/img/right.png" mode="widthFix" class="row right"></image>
+  <image src="/img/text-success.png" mode="widthFix" class="row text-success"></image>
+  <view class="Horizontal-line row"></view>
+  <view class="row">
+    <image src="/img/rumor-male.png" class="rumor" mode="widthFix"></image>
+    <view class="box1">  
+      <image src="/img/text-read.png" class="row1 text-read"  mode="widthFix"></image>
+      <image src="/img/hand.png" class="row1 hand"  mode="widthFix"></image>
+      <image src="/img/QRCode.png" class="row1 QRCode" mode="widthFix"></image>
+    </view>
+  <image src="/img/rumor-female.png" class="rumor" mode="widthFix"></image>
+  </view>
+</view>
 
 
