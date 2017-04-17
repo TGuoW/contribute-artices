@@ -1,0 +1,41 @@
+<!--index.wxml-->
+<view class="background">
+  <form bindsubmit="formSubmit">
+    <view class="box">
+      <image class="row" style="width:520rpx" src="/img/logo.png" mode="widthFix"></image>
+      <image class="row" style="width:460rpx" src="/img/contribute.png" mode="widthFix"></image>
+      <view class="row">
+        <radio-group name="radioGroup"> 
+          <label class="radio" wx:for="{{items}}">
+            <radio value="{{item.name}}"  checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </radio-group>
+      </view>
+
+      <view class="inputView row">
+        <textarea class="input" name="input" placeholder="请输入投稿内容" auto-height="true"/>
+      </view>
+
+      <view class="row" >
+        <button class="btn" bindtap="changeImage0" type="default" wx:if="{{sum>0}}">
+          <image src="{{source[0]}}" class="image"></image>
+        </button>
+        <button class="btn" bindtap="changeImage1" type="default" wx:if="{{sum>1}}">
+          <image src="{{source[1]}}" class="image"></image>
+        </button>
+        <button class="btn" bindtap="changeImage2" type="default" wx:if="{{sum>2}}">
+          <image src="{{source[2]}}" class="image"></image>
+        </button>
+        <button class="btn" bindtap="addImage" type="default" wx:if="{{sum<3}}">
+          <image src="/img/++.png" class="image"></image>
+        </button>
+      </view>
+
+      <view class="row">
+        <button class="submit" formType="submit"></button>
+      </view>
+
+    </view>
+  </form>
+</view>
+
